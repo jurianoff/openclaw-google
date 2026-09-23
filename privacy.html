@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Openclaw-gog – Polityka prywatności</title>
+  <meta name="description" content="Polityka prywatności prywatnej integracji Openclaw-gog z usługami Google.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #f97316;
+      --border: #374151;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 34px;
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin-top: 0; font-size: 2.1rem; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    .accent { color: var(--accent); }
+    .muted { color: var(--muted); }
+    a { color: #60a5fa; }
+    ul { padding-left: 1.3rem; }
+    code {
+      background: #1f2937;
+      padding: 0.1rem 0.35rem;
+      border-radius: 5px;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <p><a href="index.html">← Strona główna</a></p>
+
+      <h1><span class="accent">Polityka prywatności</span></h1>
+      <p class="muted">Openclaw-gog · ostatnia aktualizacja: 23 września 2026</p>
+
+      <p>
+        Niniejsza Polityka prywatności opisuje sposób, w jaki prywatna integracja
+        <strong>Openclaw-gog</strong> korzysta z danych udostępnionych przez usługi Google.
+        Integracja jest używana wyłącznie przez właściciela środowiska OpenClaw
+        oraz konta Google, które zostały przez niego świadomie autoryzowane.
+      </p>
+
+      <h2>1. Operator</h2>
+      <p>
+        Operatorem integracji jest <strong>JuryLink Rafał Jurylik</strong>.<br>
+        Kontakt w sprawach prywatności:
+        <a href="mailto:juras0808@gmail.com">juras0808@gmail.com</a>.
+      </p>
+
+      <h2>2. Dane i usługi Google</h2>
+      <p>
+        W zależności od zakresów OAuth przyznanych przez użytkownika integracja może
+        uzyskiwać dostęp do danych z następujących usług:
+      </p>
+      <ul>
+        <li>Google Drive, Google Docs i Google Sheets – w celu wyszukiwania, odczytu i pracy z dokumentami;</li>
+        <li>Gmail – w celu pracy z wiadomościami e-mail zgodnie z poleceniami użytkownika;</li>
+        <li>Google Calendar – w celu odczytu i obsługi kalendarza;</li>
+        <li>Google Contacts – w celu odczytu i używania kontaktów przy realizacji poleceń użytkownika.</li>
+      </ul>
+
+      <h2>3. Cel użycia danych</h2>
+      <p>
+        Dane Google są wykorzystywane wyłącznie do wykonywania zadań zleconych przez
+        autoryzowanego użytkownika, takich jak wyszukanie dokumentu, odczyt pliku,
+        analiza danych, sprawdzenie wydarzenia w kalendarzu lub praca z wiadomościami e-mail.
+        Integracja nie wykorzystuje danych Google do reklamy, profilowania ani sprzedaży danych.
+      </p>
+
+      <h2>4. Przechowywanie danych</h2>
+      <ul>
+        <li>
+          Tokeny OAuth i dane uwierzytelniające są przechowywane lokalnie w środowisku
+          serwera OpenClaw w chronionym magazynie poświadczeń.
+        </li>
+        <li>
+          Pliki pobierane z Google Drive mogą być tymczasowo przechowywane lokalnie
+          jako cache roboczy, jeśli jest to potrzebne do wykonania zadania.
+        </li>
+        <li>
+          Cache roboczy nie jest traktowany jako trwałe archiwum i może być okresowo usuwany.
+        </li>
+      </ul>
+
+      <h2>5. Udostępnianie danych</h2>
+      <p>
+        Dane Google nie są sprzedawane ani udostępniane osobom trzecim do ich własnych celów.
+        Dane mogą być technicznie przetwarzane wyłącznie przez usługi niezbędne do działania
+        integracji i infrastruktury wybranej przez operatora, w zakresie wymaganym do wykonania
+        polecenia użytkownika.
+      </p>
+
+      <h2>6. Bezpieczeństwo</h2>
+      <p>
+        Dostęp do integracji jest ograniczony do autoryzowanych kont. Poświadczenia OAuth
+        są przechowywane poza publicznym repozytorium kodu. Serwer OpenClaw jest utrzymywany
+        jako prywatne środowisko i nie publikuje tokenów ani zawartości dokumentów na tej stronie.
+      </p>
+
+      <h2>7. Kontrola użytkownika i cofnięcie dostępu</h2>
+      <p>
+        Użytkownik może w dowolnym momencie cofnąć dostęp aplikacji do konta Google
+        w ustawieniach bezpieczeństwa swojego konta Google. Po cofnięciu dostępu
+        integracja nie będzie mogła uzyskać nowych tokenów dostępowych dla tego konta.
+      </p>
+
+      <h2>8. Google API Services User Data Policy</h2>
+      <p>
+        Korzystanie przez Openclaw-gog z informacji otrzymanych z interfejsów API Google
+        oraz ich przekazywanie do innych aplikacji jest zgodne z
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">
+          Google API Services User Data Policy
+        </a>,
+        w tym z wymaganiami Limited Use.
+      </p>
+
+      <h2>9. Zmiany polityki</h2>
+      <p>
+        Polityka może być aktualizowana, gdy zmienia się sposób działania integracji,
+        zakres używanych usług Google albo wymagania bezpieczeństwa. Aktualna wersja
+        jest publikowana pod tym samym adresem.
+      </p>
+
+      <hr>
+
+      <h1><span class="accent">Privacy Policy</span></h1>
+      <p class="muted">Openclaw-gog · last updated: September 23, 2026</p>
+
+      <p>
+        This Privacy Policy explains how the private <strong>Openclaw-gog</strong>
+        integration uses data made available through Google services. The integration
+        is used only by the owner of the OpenClaw environment and Google accounts
+        explicitly authorized by the owner.
+      </p>
+
+      <h2>1. Operator</h2>
+      <p>
+        The integration is operated by <strong>JuryLink Rafał Jurylik</strong>.<br>
+        Privacy contact:
+        <a href="mailto:juras0808@gmail.com">juras0808@gmail.com</a>.
+      </p>
+
+      <h2>2. Google data and services</h2>
+      <p>
+        Depending on the OAuth scopes granted by the user, the integration may access:
+      </p>
+      <ul>
+        <li>Google Drive, Google Docs and Google Sheets – to search, read and work with documents;</li>
+        <li>Gmail – to work with email as instructed by the user;</li>
+        <li>Google Calendar – to read and manage calendar information;</li>
+        <li>Google Contacts – to read and use contact information when carrying out user instructions.</li>
+      </ul>
+
+      <h2>3. Purpose of data use</h2>
+      <p>
+        Google data is used only to perform tasks requested by the authorized user.
+        It is not used for advertising, profiling, or sale of personal data.
+      </p>
+
+      <h2>4. Data storage</h2>
+      <ul>
+        <li>OAuth tokens and credentials are stored locally in the protected credential store of the OpenClaw server.</li>
+        <li>Files downloaded from Google Drive may be cached locally when needed to complete a task.</li>
+        <li>Working cache is temporary and may be periodically removed.</li>
+      </ul>
+
+      <h2>5. Data sharing</h2>
+      <p>
+        Google user data is not sold or shared with third parties for their own purposes.
+        Data may be technically processed only by services necessary to operate the
+        integration and the infrastructure selected by the operator, to the extent
+        required to perform the user's request.
+      </p>
+
+      <h2>6. Security</h2>
+      <p>
+        Access is limited to authorized accounts. OAuth credentials are stored outside
+        the public source repository. The public website does not contain OAuth tokens
+        or contents of Google Drive documents.
+      </p>
+
+      <h2>7. User control and revocation</h2>
+      <p>
+        Users can revoke the application's access at any time through their Google Account
+        security settings. After access is revoked, the integration can no longer obtain
+        new access tokens for that account.
+      </p>
+
+      <h2>8. Google API Services User Data Policy</h2>
+      <p>
+        Openclaw-gog's use and transfer of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">
+          Google API Services User Data Policy
+        </a>,
+        including the Limited Use requirements.
+      </p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>
+        This policy may be updated when the integration, Google service scopes,
+        or security requirements change. The latest version will remain available
+        at this same URL.
+      </p>
+
+      <footer>
+        <a href="index.html">Openclaw-gog</a>
+        &nbsp;·&nbsp;
+        <a href="terms.html">Warunki korzystania / Terms of Use</a>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
